@@ -1,0 +1,14 @@
+.information-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.logement-align{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dropdown-align{
+    align-items: flex-start;
+}

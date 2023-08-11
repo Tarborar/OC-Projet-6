@@ -1,0 +1,19 @@
+.card-container{
+    position: relative;
+
+    &__title{
+        font-weight: normal;
+        font-size: 18px;
+        color: white;
+        position: absolute;
+        margin: 20px;
+        bottom: 0;
+    }
+
+    &__image{
+        width: 340px;
+        height: 340px;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+}

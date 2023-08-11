@@ -1,0 +1,21 @@
+@import './utils/colors.scss';
+
+.host-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    &__image{
+        width: 64px;
+        height: 64px;
+        border-radius: 99em;
+        object-fit: cover;
+    }
+
+    &__text{
+        color: $main-color;
+        font-size: 18px;
+        text-align: right;
+        margin: 0;
+    }
+}

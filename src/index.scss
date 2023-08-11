@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/Montserrat-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body{
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.main-container{
+  max-width: 1240px;
+  margin: 0 auto;
+}

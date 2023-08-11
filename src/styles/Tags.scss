@@ -1,0 +1,21 @@
+@import './utils/colors.scss';
+
+.tags-container{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    &__tag{
+        background-color: $main-color;
+        font-size: 14px;
+        color: white;
+        height: 25px;
+        padding-right: 30px;
+        padding-left: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 99em;
+        margin: 0;
+    }
+}

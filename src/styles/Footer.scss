@@ -1,0 +1,17 @@
+.footer-container{
+    background-color: black;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+    
+
+    &__logo{
+        margin: 50px;
+    }
+
+    &__text{
+        color: white;
+        font-size: 24px;
+        margin: 0;
+    }
+}
