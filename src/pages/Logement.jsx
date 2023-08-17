@@ -14,7 +14,7 @@ import Error from '../pages/Error';
 function Logement(){
     const { id } = useParams();
 
-    const logementData = logement.find(item => item.id === id); //viens correspondre l'id
+    const logementData = logement.find(item => item.id === id); //vient correspondre l'id
 
     if (!logementData) {
         return <div><Error/></div>;
@@ -38,7 +38,6 @@ function Logement(){
                     <Dropdown title="Équipements" items={logementData.equipments} />
                 </div>  
             </div>
-            
         </div>
     );
 }

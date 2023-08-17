@@ -17,17 +17,12 @@
       position: absolute;
       top: 50%;
       transform: translateY(-50%);
-      background-color: rgba(0, 0, 0, 0.5);
       color: white;
+      background-color: transparent;
       border: none;
-      font-size: 24px;
+      font-size: 48px;
       padding: 10px;
       cursor: pointer;
-      transition: background-color 0.3s;
-  
-      &:hover {
-        background-color: rgba(0, 0, 0, 0.7);
-      }
     }
   
     .carousel__arrow.left {
@@ -37,4 +32,15 @@
     .carousel__arrow.right {
       right: 10px;
     }
+
+    .carousel__image-number {
+      position: absolute;
+      bottom: 40px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 18px;
+      color: white;
+    }
   }
+
+  

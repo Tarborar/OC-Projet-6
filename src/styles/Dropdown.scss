@@ -4,25 +4,30 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    width: 45%;
     font-size: 18px;
-
+    
     &__text{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         font-weight: 500;
         margin: 0;
         background-color: $main-color;
         padding: 15px;
         color: white;
         border-radius: 10px;
+        z-index: 2;
     }
-
+    
     &__dropdown{
         background-color: $backgroundLight;
         //margin negative pour relier
         color: $main-color;
         margin: 0;
+        margin-top: -10px;
         padding: 30px;
         border-radius: 0 0 10px 10px;
+        z-index: 1;
 
         &--list{
             list-style: none;
@@ -35,4 +40,12 @@
     gap: 30px;
     align-items: center;
     width: 100%;
+}
+
+.logement-dropdown-size{
+    width: 45%;
+}
+
+.about-dropdown-size{
+    width: 80%;
 }

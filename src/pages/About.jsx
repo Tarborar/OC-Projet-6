@@ -7,14 +7,13 @@ import '../styles/About.scss';
 function About() {
   return (
     <div className='about-container'>
-        <Banner/>
-        <div className='dropdown-container dropdown-container__about'>
-            <Dropdown title="Fiabilité" items={[aboutData.Fiabilité]} />
-            <Dropdown title="Respect" items={[aboutData.Respect]} />
-            <Dropdown title="Service" items={[aboutData.Service]} />
-            <Dropdown title="Sécurité" items={[aboutData.Sécurité]} />
+      <Banner />
+      <div className='dropdown-container dropdown-container__about'>
+        <Dropdown title="Fiabilité" items={[aboutData.Fiabilité]} className="about-dropdown-size" />
+        <Dropdown title="Respect" items={[aboutData.Respect]} className="about-dropdown-size" />
+        <Dropdown title="Service" items={[aboutData.Service]} className="about-dropdown-size" />
+        <Dropdown title="Sécurité" items={[aboutData.Sécurité]} className="about-dropdown-size" />
       </div>
-      
     </div>
   );
 }
