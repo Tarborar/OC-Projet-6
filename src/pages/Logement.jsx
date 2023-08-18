@@ -24,16 +24,18 @@ function Logement(){
         <div>
             <Carousel images={logementData.pictures} />
             <div className="information-container">
-                <div className="logement-align">
-                    <Title title={logementData.title} />
-                    <Host host={logementData.host} />
+                <div className="information-container__all-align">
+                    <div className="information-container__all-align--information">
+                        <Title title={logementData.title} />
+                        <Location location={logementData.location} />
+                        <Tags tags={logementData.tags} />
+                    </div>
+                    <div className="information-container__all-align--social">
+                        <Host host={logementData.host} />
+                        <Rating rating={logementData.rating} />
+                    </div>
                 </div>
-                    <Location location={logementData.location} />
-                <div className="logement-align">
-                    <Tags tags={logementData.tags} />
-                    <Rating rating={logementData.rating} />
-                </div>
-                <div className="logement-align dropdown-align">
+                <div className="information-container__logement-align dropdown-align">
                     <Dropdown title="Description" items={[logementData.description]} />
                     <Dropdown title="Équipements" items={logementData.equipments} />
                 </div>  

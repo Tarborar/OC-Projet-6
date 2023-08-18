@@ -32,6 +32,10 @@
         border-radius: 10px;
         z-index: 1;
     }
+
+    @media (max-width: 767px) {
+        aspect-ratio: 1/0.75;
+      }
 }
 
 //essayer aspect-ratio: 1/1

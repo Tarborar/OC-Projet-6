@@ -3,12 +3,19 @@
 .cardlist-container{
     display: grid;
     grid-template-columns: repeat(3, 1fr); // Trois colonnes égales par ligne
-  grid-gap: 40px;
+    grid-gap: 40px;
     
     justify-content: space-between;
     background-color: $backgroundLight;
     border-radius: 25px;
     padding: 40px;
     margin-top: 40px;
-    
+
+    @media (max-width: 1224px) {
+      grid-template-columns: repeat(2, 1fr); // Deux colonnes égales par ligne
+    }
+
+    @media (max-width: 767px) {
+      grid-template-columns: repeat(1, 1fr); // Deux colonnes égales par ligne
+    }
 }
