@@ -3,7 +3,12 @@
     aspect-ratio: 1/1;
     border-radius: 10px;
     overflow: hidden; 
+    transition: transform 0.5s ease;
 
+    &:hover{
+        transform: translateY(-5px);
+    }
+    
     &__title {
         font-weight: normal;
         font-size: 18px;

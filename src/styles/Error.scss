@@ -1,0 +1,44 @@
+@import './utils/colors.scss';
+
+.error-container{
+    color: $main-color;
+    text-align: center;
+
+    &__title{
+        font-size: 288px;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 100px;
+    }
+
+    &__text{
+        font-size: 36px;
+        margin-top: 0;
+        margin-bottom: 100px;
+    }
+
+    &__link{
+        display: inline-block;
+        text-decoration: none;
+        color: $main-color;
+        font-size: 18px;
+        border-bottom: 1px solid $main-color;
+        margin-bottom: 100px;
+    }
+
+    @media (max-width: 767px){
+        .error-container{
+            &__title{
+                font-size: 96px;  
+            }
+        
+            &__text{
+                font-size: 18px;
+            }
+        
+            &__link{
+                font-size: 14px;
+            }
+        }
+    }
+}

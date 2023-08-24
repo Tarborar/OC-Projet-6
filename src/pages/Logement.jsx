@@ -36,8 +36,8 @@ function Logement(){
                     </div>
                 </div>
                 <div className="information-container__logement-align dropdown-align">
-                    <Dropdown title="Description" items={[logementData.description]} />
-                    <Dropdown title="Équipements" items={logementData.equipments} />
+                    <Dropdown title="Description" items={[logementData.description]} className="logement-dropdown-size"/>
+                    <Dropdown title="Équipements" items={logementData.equipments} className="logement-dropdown-size"/>
                 </div>  
             </div>
         </div>

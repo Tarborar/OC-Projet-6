@@ -25,4 +25,19 @@ header{
             }
         }
     }
+
+    @media (max-width: 767px){
+        .logo{
+            width: 147px;
+            height: auto;
+        }
+
+        .navbar{
+            justify-content: space-evenly;
+        }
+
+        .navbar__link{
+            font-size: 4vw;
+        }
+    }
 }

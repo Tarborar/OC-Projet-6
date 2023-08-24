@@ -21,7 +21,7 @@ function Header(){
     return(
         <header>
             <Link to="/">
-                <img src={logo} alt="Accueil logo" />
+                <img src={logo} alt="Accueil logo" className='logo'/>
             </Link>
             <nav className='navbar'>
                 <Link to="/" className={activePage === 'Accueil' ? 'navbar__link active' : 'navbar__link'}>

@@ -5,7 +5,7 @@ import Banner from '../components/Banner'
 function Home() {
   return (
     <div className="App">
-      <Banner/>
+      <Banner bannerClass="home-banner"/>
       <CardList/>
     </div>
   );

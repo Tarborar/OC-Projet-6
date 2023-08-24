@@ -1,18 +1,18 @@
 import React, { useState } from 'react';
-import { useLocation } from 'react-router-dom';
 import '../styles/Dropdown.scss';
-import { faChevronDown, faChevronUp } from '@fortawesome/free-solid-svg-icons';
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function Dropdown({ title, items, className }) {
   const [isOpen, setIsOpen] = useState(false);
-  const location = useLocation();
 
   return (
-    <div className={`dropdown-container ${className} ${location.pathname === '/about' ? 'about-dropdown-size' : 'logement-dropdown-size'}`}>
+    <div className={`dropdown-container ${className}`}>
       <h3 onClick={() => setIsOpen(!isOpen)} className='dropdown-container__text'>
         {title}
-        {isOpen ? <FontAwesomeIcon icon={faChevronUp} /> : <FontAwesomeIcon icon={faChevronDown} />}
+        {isOpen ? <FontAwesomeIcon icon={faChevronUp} 
+        className='dropdown-container__text--chevronDown'/> : 
+        <FontAwesomeIcon icon={faChevronUp} className='dropdown-container__text--chevronUp'/>}
       </h3>
       {isOpen && (
         <ul className='dropdown-container__dropdown'>

@@ -17,12 +17,12 @@ body{
   padding: 0 100px; 
   box-sizing: border-box; 
 
-  @media (max-width: 1224px) {
+  @media (max-width: 1024px) {
     padding: 0 50px; 
   }
 
   @media (max-width: 767px) {
-    padding: 0 25px; 
+    padding: 0 20px; 
   }
 }
 

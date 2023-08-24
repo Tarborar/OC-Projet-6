@@ -6,6 +6,10 @@
     justify-content: flex-start;
     font-size: 18px;
     
+    &:hover{
+        cursor: pointer;
+    }
+
     &__text{
         display: flex;
         justify-content: space-between;
@@ -17,11 +21,20 @@
         color: white;
         border-radius: 10px;
         z-index: 2;
+
+        &--chevronUp{
+            transform: rotate(0deg);
+            transition: transform 0.5s;
+        }
+
+        &--chevronDown{
+            transform: rotate(180deg);
+            transition: transform 0.5s;
+        }
     }
     
     &__dropdown{
         background-color: $backgroundLight;
-        //margin negative pour relier
         color: $main-color;
         margin: 0;
         margin-top: -10px;
@@ -53,7 +66,7 @@
 .about-dropdown-size{
     width: 80%;
     
-    @media (max-width: 1224px) {
+    @media (max-width: 1024px) {
         width: 100%;
     }
 }
