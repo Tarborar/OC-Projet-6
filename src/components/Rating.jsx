@@ -8,11 +8,11 @@ function Rating({ rating }) {
   
     return (
       <div className='rating-container'>
-          {Array.from({ length: redStars }, (_) => (
-            <FontAwesomeIcon icon="star" className='rating-container__star rating-container__star--note'/>
+          {Array.from({ length: redStars }, (_, id) => (
+            <FontAwesomeIcon key={`red-${id}`} icon="star" className='rating-container__star rating-container__star--note'/>
           ))}
-          {Array.from({ length: grayStars }, (_) => (
-            <FontAwesomeIcon icon="star" className='rating-container__star rating-container__star--rest'/>
+          {Array.from({ length: grayStars }, (_, id) => (
+            <FontAwesomeIcon key={`gray-${id}`} icon="star" className='rating-container__star rating-container__star--rest'/>
           ))}
       </div>
     );
